@@ -3,6 +3,8 @@
 	<head>
     	<meta charset="utf-8">
     	<title>Отели Седоны</title>
+    	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    	<link href="css/normalize.css" rel="stylesheet">
     	<link href="css/style.css" rel="stylesheet">
   	</head>
   	<body>
@@ -70,18 +72,20 @@
 						</fieldset>
 					</form>
 				</div>
-				<h2>Найдено: 3</h2>
-				<p>Сортировка:</p>
-				<ul class="sort sort-by">
-					<li>По цене</li>
-					<li><a href="#">По типу</a></li>
-					<li><a href="#">По рейтингу</a></li>
-				</ul>
-				<ul class="sort">
-					<li><a href="#">По убыванию</a></li>
-					<li><a href="#">По возрастанию</a></li>
-				</ul>
-				<article class="hotel clearfix">
+				<div class="filter-result result-block clearfix">
+					<h2>Найдено: 3</h2>
+					<p>Сортировка:</p>
+					<ul class="sort sort-by">
+						<li>По цене</li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По рейтингу</a></li>
+					</ul>
+					<ul class="sort sort-type">
+						<li><a href="#"><span class="icon-up-dir"></span>По убыванию</a></li>
+						<li><a href="#"><span class="icon-down-dir"></span>По возрастанию</a></li>
+					</ul>
+				</div>
+				<article class="hotel result-block clearfix">
 					<img src="img/amara-resort.jpg" width="135" height="90" alt="amara-resort-photo">
 					<div class="hotel-info-main">
 						<h2>Amara Resort &#38; Spa</h2>
@@ -90,11 +94,16 @@
 						<a href="#" class="btn btn-book">Забронировать</a>
 					</div>
 					<div class="hotel-info-add">
-						<div class="stars"></div>
-						<div class="btn-rate">Рейтинг: 8,5</a>
+						<div class="stars">
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+						</div>
+						<div class="btn-rate">Рейтинг: 8,5</div>
 					</div>
 				</article>
-				<article class="hotel clearfix">
+				<article class="hotel result-block clearfix">
 					<img src="img/desert-quail-inn.jpg" width="135" height="90" alt="desert-quail-inn-photo">
 					<div class="hotel-info-main">
 						<h2>Desert Quail Inn</h2>
@@ -103,11 +112,14 @@
 						<a href="#" class="btn btn-book">Забронировать</a>
 					</div>
 					<div class="hotel-info-add">
-						<div class="stars"></div>
-						<div class="btn-rate">Рейтинг: 8,9</a>
+						<div class="stars">
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+						</div>
+						<div class="btn-rate">Рейтинг: 8,9</div>
 					</div>
 				</article>
-				<article class="hotel clearfix">
+				<article class="hotel result-block clearfix">
 					<img src="img/villas-poco-diablo.jpg" width="135" height="90" alt="villas-at-poco-diablo-photo">
 					<div class="hotel-info-main">
 						<h2>Villas at Poco Diablo</h2>
@@ -116,8 +128,12 @@
 						<a href="#" class="btn btn-book">Забронировать</a>
 					</div>
 					<div class="hotel-info-add">
-						<div class="stars"></div>
-						<div class="btn-rate">Рейтинг: 9,2</a>
+						<div class="stars">
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+						</div>
+						<div class="btn-rate">Рейтинг: 9,2</div>
 					</div>	
 				</article>
 			</div>
@@ -128,9 +144,9 @@
 					<a href="#">#visitsedona</a>
 				</section>
 				<section class="footer-social">
-					<a class="social-btn social-btn-twit" href="#">Твиттер</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-utube" href="#">Ютуб</a>
+					<a class="social-btn" href="#"><span class="icon-twitter"></span>Твиттер</a>
+					<a class="social-btn" href="#"><span class="icon-facebook"></span>Фейсбук</a>
+					<a class="social-btn" href="#"><span class="icon-youtube"></span>Ютуб</a>
 				</section>
 				<section class="footer-copyright">
 					<p>website by <a class="copyright-logo" href="#">HTML Academy</a></p>
