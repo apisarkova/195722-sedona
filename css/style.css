@@ -626,27 +626,27 @@ h3 {
 	border: 0;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 15px;
 }
 
 .filter legend {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
-	margin: 27px 0 12px;
+	margin: 0;
+	margin-top: 26px;
 	padding: 0;
 }
 
 .filter fieldset:nth-child(1) {
 	float: left;
-	width: 150px;
-	margin-right: 10%;
+	width: 220px;
+	margin-right: 3%;
 }
 
 .filter fieldset:nth-child(2) {
 	float: left;
-	width: 150px;
-	margin-right: 10%;
+	width: 220px;
+	margin-right: 3%;
 }
 
 .filter fieldset:nth-child(3) {
@@ -654,22 +654,41 @@ h3 {
 	width: 31%;
 }
 
-.filter label {
-	display: block;
-}
-
 .btn-filter {
 	display: block;
 }
 
 .filter input[type="checkbox"] {
-	margin-top: 17px;
-	margin-bottom: 12px;
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	margin-top: 21px;
+	padding-left: 42px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+	content: "\2610";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	font-family: "symbols-sedona";
+	font-size: 26px;
+}
+
+input[type="checkbox"]:checked + label::before {
+	content: "\2611";
 }
 
 .price-controls {
 	position: relative;
 	height: 36px;
+	margin-top: 6px;
 	margin-bottom: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
