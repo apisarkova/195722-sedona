@@ -26,7 +26,7 @@
 				<div class="filter clearfix">
 					<form action="#" class="clearfix">
 						<fieldset>
-							<legend>Инфраструктура</legend>
+							<legend>Инфраструктура:</legend>
 							<label>
 								<input type="checkbox" name="pool">
 								Бассейн
@@ -56,19 +56,19 @@
 							</label>
 						</fieldset>
 						<fieldset>
-							<legend>Стоимость в сутки</legend>
-							<div class="btn-filter">
-								<label>
-									От
-									<input name="price-from">
-								</label>
-								<label>
-									До
-									<input name="price-to">
-								</label>
+							<legend>Стоимость в сутки (р):</legend>
+							<div class="price-controls">
+								<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+								<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 							</div>
-							<input type="range" name="price-range">
-							<button type="submit" class="btn-filter">Показать</button>
+    						<div class="range-controls">
+    							<div class="scale">
+          							<div class="bar"></div>
+        						</div>
+        						<div class="range-toggle range-toggle-min"></div>
+        						<div class="range-toggle range-toggle-max"></div>
+    						</div>
+							<button type="submit" class="btn-filter btn-transparent">Показать</button>
 						</fieldset>
 					</form>
 				</div>
@@ -82,7 +82,7 @@
 					</ul>
 					<ul class="sort sort-type">
 						<li><a href="#"><span class="icon-up-dir"></span>По убыванию</a></li>
-						<li><a href="#"><span class="icon-down-dir"></span>По возрастанию</a></li>
+						<li><a href="#"><span class="active icon-down-dir"></span>По возрастанию</a></li>
 					</ul>
 				</div>
 				<article class="hotel result-block clearfix">
