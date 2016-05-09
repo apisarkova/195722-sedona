@@ -233,7 +233,7 @@ h3 {
 }
 
 .first-feature-img {
-	float: right;
+	float: left;
 	width: 66.66%;
 }
 
@@ -323,7 +323,7 @@ h3 {
 }
 
 .second-feature-right {
-	float: right;
+	float: left;
 	width: 23.33%;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -438,6 +438,7 @@ h3 {
 
 .search-form .calendar {
 	display: inline-block;
+	vertical-align: top;
 	width: 39px;
 	height: 38px;
 	margin: 0;
@@ -446,6 +447,27 @@ h3 {
 	font-size: 0;
 	background-color: #f2f2f2;
 	text-align: center;
+}
+
+.search-form label {
+	display: block;
+	width: 110px;
+	margin: 0;
+}
+
+
+.search-form input[type="date"] {
+	width: 277px;
+	height: 38px;
+	margin: 0;
+	margin-bottom: 29px;
+	padding: 0 15px;
+	border: 0;
+	background-color: #f2f2f2;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .calendar span {
@@ -460,6 +482,52 @@ h3 {
 
 .calendar span:active {
 	color: #81b3d2;
+}
+
+.search-form .guests-number {
+	display: inline-block;
+	width: 226px;
+	margin-right: 3px;
+}
+
+.search-form .guests-number:last-child {
+	margin-right: 0px;
+}
+
+.guests-number span {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.guests-number .guests-age {
+	width: 110px;
+	font-weight: bold;
+}
+
+.guests-number input[type="text"] {
+	width: 38px;
+	border: 0;
+	background-color: #f2f2f2;
+	height: 36px;
+	text-align: center;
+}
+
+.guests-number .icon-minus,
+.guests-number .icon-plus {
+	vertical-align: top;
+	line-height: 38px;
+	color: #a9a9a9;
+	background-color: #f2f2f2;
+	height: 38px;
+	width: 38px;
+	text-align: center;
+}
+
+.guests-number .guests-children {
+	width: 60px;
+	padding-left: 50px;
 }
 
 .search-form .find {

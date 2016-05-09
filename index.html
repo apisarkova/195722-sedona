@@ -14,9 +14,9 @@
 					<ul>
 						<li><a href="#">Информация</a></li>
 						<li><a href="#">Фото и видео</a></li>
-						<li><a class="header-logo" href="#">Главная</a></li>
+						<li><a class="header-logo" href="index.html">Главная</a></li>
 						<li><a href="#">Карта штата</a></li>
-						<li><a href="#">Гостиницы</a></li>
+						<li><a href="inner.html">Гостиницы</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -93,20 +93,24 @@
 					<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					<a href="#">Поиск гостиницы в Седоне</a>
 					<form class="search-form" action="#">
-						<label>Дата заезда
-							<input type="date" name="check-in">
-						</label>
+						<label for="check-in-id">Дата заезда:</label>
+						<input type="date" name="check-in" placeholder="24 апреля 2016" id="check-in-id">
 						<button class="calendar"><span class="icon-calendar"></span>Выбрать дату</button> <!--отдельный элемент для того, чтобы в будущем на неё программист мог повесить событие нажатия для открытия календаря с возможностью выбора даты-->
-						<label>Дата выезда
-							<input type="date" name="check-out">
-						</label>
+						<label for="check-out-id">Дата выезда:</label>
+						<input type="date" name="check-out" placeholder="4 июля 2016" id="check-out-id">
 						<button class="calendar"><span class="icon-calendar"></span>Выбрать дату</button> <!--отдельный элемент для того, чтобы в будущем на неё программист мог повесить событие нажатия для открытия календаря с возможностью выбора даты-->
-						<label>Взрослые
-							<input type="number" name="adult">
-						</label>
-						<label>Дети
-							<input type="number" name="children">
-						</label>
+						<div class="guests-number">
+							<span class="guests-age">Взрослые:</span>
+    						<span class="icon-minus"></span>
+    						<input type="text" name="adults" value="2">
+    						<span class="icon-plus"></span>
+						</div>
+						<div class="guests-number">
+							<span class="guests-age guests-children">Дети:</span>
+    						<span class="icon-minus"></span>
+    						<input type="text" name="children" value="0">
+    						<span class="icon-plus"></span>
+						</div>
 						<button class="find" type="submit">Найти</button>			
 					</form>
 					<img src="img/map.jpg" width="1200" height="360"alt="map">
