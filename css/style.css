@@ -433,7 +433,7 @@ h3 {
 	margin-left: -284px;
 	text-align: left;
 	background-color: #ffffff;
-	z-index: 20;
+	z-index: 30;
 	font-size: 0;
 }
 
@@ -589,14 +589,6 @@ h3 {
 	color: #88b6d1;
 }
 
-.hotel-search img {
-	width: 100%;
-	height: 472px;
-	margin: 0 auto;
-	display: block;
-	overflow: hidden;
-}
-
 .hotel-search label {
 	display: inline-block;
 	font-size: 14px;
@@ -610,6 +602,29 @@ h3 {
 	font-weight: bold;
 	color: #000000;
 	margin-bottom: 29px;
+}
+
+.sedona-map {
+	position: relative;
+}
+
+.sedona-map img {
+	width: 100%;
+	height: 472px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+}
+
+.sedona-map iframe {
+	position: absolute;
+	top: 0px;
+ 	width: 100%;
+ 	height: 592px;
+ 	margin: 0;
+	padding: 0;
+	text-align: center;
+	z-index: 10;
 }
 
 .main-footer {
@@ -632,7 +647,9 @@ h3 {
 }
 
 .index-footer .container {
+	position: relative;
 	background: rgba(255,255,255,0.9);
+	z-index: 20;
 }
 
 .footer-hashtag {
