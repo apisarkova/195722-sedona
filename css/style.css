@@ -4,6 +4,7 @@ body {
 	color: #333333;
 	text-transform: uppercase;
 	font-family: "PT Sans", sans-serif;	
+	background-color: #f2f2f2;
 }
 
 @font-face {
@@ -69,6 +70,16 @@ h3 {
 	font-family: "PT Sans", sans-serif;
 }
 
+.main-container {
+	width: 100%;
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
 .clearfix::after {
 	content: '';
 	display: table;
@@ -80,7 +91,7 @@ h3 {
 	min-width: 768px;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0;  
 }
 
 .main-header .container {
@@ -234,7 +245,7 @@ h3 {
 
 .first-feature-img {
 	float: left;
-	width: 66.66%;
+	width: 66.67%;
 }
 
 .infrastructure {
@@ -357,7 +368,7 @@ h3 {
 
 .second-feature-img {
 	float: left;
-	width: 66.66%;
+	width: 66.67%;
 }
 
 .other-features {
@@ -490,12 +501,12 @@ h3 {
 
 
 .search-form input[type="date"] {
-	width: 277px;
-	height: 38px;
+	width: 273px;
+	height: 34px;
 	margin: 0;
 	margin-bottom: 29px;
 	padding: 0 15px;
-	border: 0;
+	border: 2px solid #f2f2f2;
 	background-color: #f2f2f2;
 	text-transform: uppercase;
 	color: #000000;
@@ -503,17 +514,17 @@ h3 {
 	line-height: 26px;
 }
 
-.calendar span {
+.icon-calendar {
 	font-size: 21px;
 	line-height: 38px;
 	color: #c2c2c2;
 }
 
-.calendar span:hover {
+.icon-calendar:hover {
 	color: #000000;
 }
 
-.calendar span:active {
+.icon-calendar:active {
 	color: #81b3d2;
 }
 
@@ -540,10 +551,10 @@ h3 {
 }
 
 .guests-number input[type="text"] {
-	width: 38px;
-	border: 0;
+	width: 34px;
+	border: 2px solid #f2f2f2;
 	background-color: #f2f2f2;
-	height: 36px;
+	height: 32px;
 	text-align: center;
 }
 
@@ -556,11 +567,32 @@ h3 {
 	height: 38px;
 	width: 38px;
 	text-align: center;
+	cursor: pointer;
+}
+
+.guests-number .icon-minus:hover,
+.guests-number .icon-plus:hover {
+	color: #000000;
+}
+
+.guests-number .icon-minus:active,
+.guests-number .icon-plus:active {
+	color: #81b3d2;
 }
 
 .guests-number .guests-children {
 	width: 60px;
 	padding-left: 50px;
+}
+
+.search-form input:hover {
+	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.search-form input:active {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
 }
 
 .search-form .find {
@@ -797,10 +829,23 @@ input[type="checkbox"] + label::before {
 	height: 10px;
 	font-family: "symbols-sedona";
 	font-size: 26px;
+	color: #ffffff;
+}
+
+input[type="checkbox"] + label:hover:before {
+	color: #fefefe;
+}
+
+input[type="checkbox"] + label:disabled:before {
+	color: #6a6a6a;
 }
 
 input[type="checkbox"]:checked + label::before {
 	content: "\2611";
+}
+
+input[type="checkbox"]:checked + label:hover:before {
+	color: #ffffff;
 }
 
 .price-controls {
