@@ -3,7 +3,7 @@ body {
 	line-height: 26px;
 	color: #333333;
 	text-transform: uppercase;
-	font-family: "PT Sans", sans-serif;	
+	font-family: "PT Sans", "Arial", sans-serif;	
 	background-color: #f2f2f2;
 }
 
@@ -53,7 +53,7 @@ h2 {
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .hotel-search h2 {
@@ -67,7 +67,7 @@ h3 {
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .main-container {
@@ -112,6 +112,7 @@ h3 {
 
 .main-navigation li {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 26px;
 	padding: 16px 0;
@@ -153,7 +154,7 @@ h3 {
 	vertical-align: top;
 	text-align: center;
 	text-decoration: none;
-	background: url("../img/header-logo.png") no-repeat;
+	background: transparent url("../img/header-logo.png") no-repeat;
 	z-index: 10;
 }
 
@@ -180,9 +181,10 @@ h3 {
 .index-logo {
 	display: block;
 	margin-bottom: 60px;
+	padding: 0;
 	position: relative;
-	min-height: 509px;
-	background: url("../img/index-logo.jpg") no-repeat center;
+	min-height: 508px;
+	background: #927f77 url("../img/index-logo.jpg") no-repeat center;
 }
 
 .index-logo-text {
@@ -249,7 +251,7 @@ h3 {
 }
 
 .infrastructure {
-	height: 330px;
+	min-height: 330px;
 	padding: 0;
 	margin: 0;
 	text-align: center;
@@ -258,7 +260,7 @@ h3 {
 .infrastructure-left {
 	float: left;
 	width: 33.33%;
-	height: 330px;
+	min-height: 330px;
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -276,7 +278,7 @@ h3 {
 .infrastructure-right {
 	float: right;
 	width: 33.33%;
-	height: 330px;
+	min-height: 330px;
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -330,7 +332,7 @@ h3 {
 }
 
 .second-feature {
-	height: 255px;
+	min-height: 255px;
 }
 
 .second-feature-right {
@@ -372,7 +374,7 @@ h3 {
 }
 
 .other-features {
-	height: 255px;
+	min-height: 255px;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -448,34 +450,77 @@ h3 {
 	font-size: 0;
 }
 
-@keyframes bounce {
-	0%   {
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: translateY(-50px);
+		-ms-transform: translateY(-50px);
 		transform: translateY(-50px);
 	}
 	100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes bounce {
+	0%   {
+		-webkit-transform: translateY(-50px);
+		-ms-transform: translateY(-50px);
+		transform: translateY(-50px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
 
 .search-form-show {
 	display: block;
+	-webkit-animation: bounce 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 	animation: bounce 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 	z-index: 40;
 }
 
+@-webkit-keyframes shake {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateX(-5px);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translateY(5px);
+		-ms-transform: translateY(5px);
+		transform: translateX(5px);
+	}
+}
+
 @keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-5px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translateX(5px);
-  }
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateX(-5px);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translateY(5px);
+		-ms-transform: translateY(5px);
+		transform: translateX(5px);
+	}
 }
 
 .search-form-error {
+	-webkit-animation: shake 0.6s;
 	animation: shake 0.6s;
 
 }
@@ -500,7 +545,7 @@ h3 {
 }
 
 
-.search-form input[type="date"] {
+.search-form .search-date {
 	width: 273px;
 	height: 34px;
 	margin: 0;
@@ -530,6 +575,7 @@ h3 {
 
 .search-form .guests-number {
 	display: inline-block;
+	vertical-align: middle;
 	width: 226px;
 	margin-right: 3px;
 }
@@ -661,12 +707,12 @@ h3 {
 
 .main-footer {
 	background-color: #ffffff;
-	height: 120px;
+	min-height: 120px;
 }
 
 .index-footer {
 	overflow: hidden;
-	height: 120px;
+	min-height: 120px;
 	background: #ffffff url("../img/footer-background.jpg") no-repeat bottom center;
 	margin: 0;
 	padding: 0;
@@ -764,7 +810,7 @@ h3 {
 }
 
 .filter {
-	height: 216px;
+	min-height: 216px;
 	background: #3b6487 url("../img/filter-background.jpg") no-repeat center;
 	overflow: hidden;
 	margin: 0;
@@ -866,6 +912,8 @@ input[type="checkbox"]:checked + label:hover:before {
 	width: 2px;
 	height: 22px;
 	background: #ffffff;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
@@ -960,22 +1008,26 @@ input[type="checkbox"]:checked + label:hover:before {
 
 .filter-result h2 {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 32px 50px 32px 0;
 	padding: 0;
 }
 
 .filter-result p {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	padding: 0;
 }
 
 .sort {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .sort li {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .sort-by li:first-child {
