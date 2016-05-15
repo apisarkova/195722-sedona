@@ -3,7 +3,7 @@ body {
 	line-height: 26px;
 	color: #333333;
 	text-transform: uppercase;
-	font-family: "PT Sans", "Arial", sans-serif;	
+	font-family: "PT Sans", "Arial", sans-serif;
 	background-color: #f2f2f2;
 }
 
@@ -723,9 +723,9 @@ h3 {
 .sedona-map iframe {
 	position: absolute;
 	top: 0px;
- 	width: 100%;
- 	height: 592px;
- 	margin: 0;
+	width: 100%;
+	height: 592px;
+	margin: 0;
 	padding: 0;
 	text-align: center;
 	z-index: 10;
@@ -1078,7 +1078,7 @@ input[type="checkbox"]:checked + label:hover:before {
 }
 
 .sort-by li {
-	padding-left: 32px;    
+	padding-left: 32px;
 }
 
 .sort-by li:first-child {
@@ -1144,7 +1144,6 @@ input[type="checkbox"]:checked + label:hover:before {
 .sort-type .active {
 	color: #81b3d2;
 }
-
 
 .hotel img {
 	float: left;
@@ -1259,4 +1258,3 @@ input[type="checkbox"]:checked + label:hover:before {
 	color: #666666;
 	background-color: #f2f2f2;
 }
-
