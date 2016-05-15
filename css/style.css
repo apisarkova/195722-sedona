@@ -8,31 +8,28 @@ body {
 }
 
 @font-face {
-  font-weight: normal;
-  font-style: normal;
-
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-family: "symbols-sedona";
+	src: url("../fonts/symbols-sedona.woff") format("woff"),
+		url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-
-  speak: none;
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	font-weight: normal;
+	line-height: 1em;
+	font-family: "symbols-sedona";
+	text-align: center;
+	text-transform: none;
+	text-decoration: inherit;
+	font-style: normal;
+	font-variant: normal;
+	speak: none;
 }
 
 .icon-facebook::before { content: "\66"; } /* "f" */
@@ -91,7 +88,7 @@ h3 {
 	min-width: 768px;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0;  
+	padding: 0;
 }
 
 .main-header .container {
@@ -145,12 +142,12 @@ h3 {
 	top: 0px;
 	left: 50%;
 	display: block;
- 	width: 138px;
- 	height: 70px;
- 	margin: 0;
- 	margin-left: -69px;
+	width: 138px;
+	height: 70px;
+	margin: 0;
+	margin-left: -69px;
 	padding: 0;
-  	font-size: 0;
+	font-size: 0;
 	vertical-align: top;
 	text-align: center;
 	text-decoration: none;
@@ -191,7 +188,7 @@ h3 {
 	position: absolute;
 	top: 77px;
 	left: 50%;
- 	margin-left: -229px;
+	margin-left: -229px;
 }
 
 .index-logo-frame {
@@ -492,7 +489,7 @@ h3 {
 }
 
 @keyframes bounce {
-	0%   {
+	0% {
 		-webkit-transform: translateY(-50px);
 		-ms-transform: translateY(-50px);
 		transform: translateY(-50px);
@@ -826,10 +823,10 @@ h3 {
 
 .footer-copyright .copyright-logo {
 	display: inline-block;
- 	width: 113px;
- 	height: 39px;
- 	margin-left: 8px;
-  	font-size: 0;
+	width: 113px;
+	height: 39px;
+	margin-left: 8px;
+	font-size: 0;
 	vertical-align: middle;
 	text-decoration: none;
 	background: transparent url("../img/logo-academy.png") no-repeat center;
@@ -844,11 +841,12 @@ h3 {
 }
 
 .filter {
-	min-height: 216px;
+	min-height: 183px;
 	background: #3b6487 url("../img/filter-background.jpg") no-repeat center;
 	overflow: hidden;
 	margin: 0;
 	padding: 0 6%;
+	padding-bottom: 28px;
 	color: #ffffff;
 }
 
@@ -869,14 +867,14 @@ h3 {
 
 .filter fieldset:nth-child(1) {
 	float: left;
-	width: 224px;
-	margin-right: 3%;
+	width: 18%;
+	margin-right: 6.5%;
 }
 
 .filter fieldset:nth-child(2) {
 	float: left;
-	width: 220px;
-	margin-right: 3%;
+	width: 18%;
+	margin-right: 6%;
 }
 
 .filter fieldset:nth-child(3) {
@@ -916,7 +914,8 @@ input[type="checkbox"] + label:hover:before {
 	color: #fefefe;
 }
 
-input[type="checkbox"] + label:disabled:before {
+input[type="checkbox"]:disabled + label::before,
+input[type="checkbox"]:checked:disabled + label::before {
 	color: #6a6a6a;
 }
 
@@ -965,12 +964,13 @@ input[type="checkbox"]:checked + label:hover:before {
 
 .price-controls .min-price,
 .price-controls .max-price {
-	width: 90px;
-	padding-left: 65px;
+	width: 37%;
+	text-align: center;
+	padding-left: 13%;
 }
 
 .price-controls .max-price {
-	padding-left: 58px;
+	padding-left: 11%;
 }
 
 .price-controls input {
