@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Отели Седоны</title>
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.min.css" rel="stylesheet">
 	</head>
@@ -22,52 +22,40 @@
 			</header>
 			<main>
 				<form action="#" class="filter clearfix" method="get">
-						<fieldset>
-							<legend>Инфраструктура:</legend>
-							<input type="checkbox" checked name="pool" id="pool-id">
-							<label for="pool-id">
-								Бассейн
-							</label>
-							<input type="checkbox" name="parking" id="parking-id">
-							<label for="parking-id">
-								Парковка
-							</label>
-							<input type="checkbox" name="wi-fi" id="wi-fi-id">
-							<label for="wi-fi-id">
-								Wi-Fi
-							</label>
-						</fieldset>
-						<fieldset>
-							<legend>Тип жилья:</legend>
-							<input type="checkbox" checked name="hotel" id="hotel-id">
-							<label for="hotel-id">
-								Гостиница
-							</label>
-							<input type="checkbox" checked name="motel" id="motel-id">
-							<label for="motel-id">
-								Мотель
-							</label>
-							<input type="checkbox" checked name="apartment" id="apartment-id">
-							<label for="apartment-id">
-								Апартаменты
-							</label>
-						</fieldset>
-						<fieldset>
-							<legend>Стоимость в сутки (р):</legend>
-							<div class="price-controls">
-								<label class="min-price">от <input type="text" name="min-price" value="0"></label>
-								<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<input type="checkbox" checked name="pool" id="pool-id">
+						<label for="pool-id">Бассейн</label>
+						<input type="checkbox" name="parking" id="parking-id">
+						<label for="parking-id">Парковка</label>
+						<input type="checkbox" name="wi-fi" id="wi-fi-id">
+						<label for="wi-fi-id">Wi-Fi</label>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<input type="checkbox" checked name="hotel" id="hotel-id">
+						<label for="hotel-id">Гостиница</label>
+						<input type="checkbox" checked name="motel" id="motel-id">
+						<label for="motel-id">Мотель</label>
+						<input type="checkbox" checked name="apartment" id="apartment-id">
+						<label for="apartment-id">Апартаменты</label>
+					</fieldset>
+					<fieldset>
+						<legend>Стоимость в сутки (р):</legend>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
 							</div>
-							<div class="range-controls">
-								<div class="scale">
-									<div class="bar"></div>
-								</div>
-								<div class="range-toggle range-toggle-min"></div>
-								<div class="range-toggle range-toggle-max"></div>
-							</div>
-							<button type="submit" class="btn-filter btn-transparent">Показать</button>
-						</fieldset>
-					</form>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+						<button type="submit" class="btn-filter btn-transparent">Показать</button>
+					</fieldset>
+				</form>
 				<div class="filter-result result-block clearfix">
 					<h2>Найдено: 3</h2>
 					<p>Сортировка:</p>
@@ -134,17 +122,17 @@
 				</article>
 			</main>
 			<footer class="main-footer clearfix">
-					<section class="footer-hashtag">
-						<a href="#">#visitsedona</a>
-					</section>
-					<section class="footer-social">
-						<a class="social-btn" href="#"><span class="icon-twitter"></span>Твиттер</a>
-						<a class="social-btn" href="#"><span class="icon-facebook"></span>Фейсбук</a>
-						<a class="social-btn" href="#"><span class="icon-youtube"></span>Ютуб</a>
-					</section>
-					<section class="footer-copyright">
-						<p>website by <a class="copyright-logo" href="#">HTML Academy</a></p>
-					</section>
+				<section class="footer-hashtag">
+					<a href="#">#visitsedona</a>
+				</section>
+				<section class="footer-social">
+					<a class="social-btn" href="#"><span class="icon-twitter"></span>Твиттер</a>
+					<a class="social-btn" href="#"><span class="icon-facebook"></span>Фейсбук</a>
+					<a class="social-btn" href="#"><span class="icon-youtube"></span>Ютуб</a>
+				</section>
+				<section class="footer-copyright">
+					<p>website by <a class="copyright-logo" href="#">HTML Academy</a></p>
+				</section>
 			</footer>
 		</div>
 	</body>
